@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
+
+
+
 const name='Raveena Patil';
 const img1='https://picsum.photos/200/300';
 const img2='https://picsum.photos/250/300';
-const img3='https://picsum.photos/220/320';
+const img3='https://picsum.photos/220/300';
 const img4='https://picsum.photos/id/13/200/300';
 const links1="https://www.google.com/";
 const links2="https://github.com/Raveenapatil/thappa_app/tree/master";
@@ -12,11 +16,15 @@ const links2="https://github.com/Raveenapatil/thappa_app/tree/master";
 
 ReactDOM.render(
   <>
-  <h1 contentEditable="true">My name is {name}</h1>
+  <h1 className="heading" >My name is {name}</h1>
+  <div className='img_div'>
   <img src={img1} alt="randomImages"/>
   <img src={img2} alt="randomImages"/>
   <a href={links1} target='blank'><img src={img3} alt="randomImages"/></a>
   <a href={links2} target='_raveena'><img src={img4} alt="randomImages"/></a>
+
+  </div>
+ 
   </>,
   document.getElementById('root')
 );
