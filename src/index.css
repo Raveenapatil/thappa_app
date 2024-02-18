@@ -6,6 +6,7 @@
   text-transform: capitalize;
   text-shadow: 0px 2px 4px #ffec5f;
   margin: 80px 0; 
+  font-family: "Anta", sans-serif;
 }
 .img_div{
   display: flex;

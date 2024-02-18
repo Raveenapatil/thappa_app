@@ -12,11 +12,23 @@ const img4='https://picsum.photos/id/13/200/300';
 const links1="https://www.google.com/";
 const links2="https://github.com/Raveenapatil/thappa_app/tree/master";
 
+const heading ={
+  fontWeight: "bold",
+  color: "coral",
+  textAlign: "center",
+  textTransform: "capitalize",
+  textShadow: "0px 2px 4px #ffec5f",
+  margin:" 80px 0",
+  fontFamily:  '"Anta", sans-serif',
+};
+
+
+
 //JSX attribute
 
 ReactDOM.render(
   <>
-  <h1 className="heading" >My name is {name}</h1>
+  <h1 style={heading}>My name is {name}</h1>
   <div className='img_div'>
   <img src={img1} alt="randomImages"/>
   <img src={img2} alt="randomImages"/>
